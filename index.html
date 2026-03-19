@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Used Car Sales Interface</title>
+  <link rel="stylesheet" href="css/style.css">
+
+ 
+  <script src="js/usedCars-TH-1.js" defer></script>
+ 
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Used Car Sales Interface</h1>
+    <p>Browse the available used cars and filter them by your needs.</p>
+  </header>
+
+  <main>
+    <section class="filters">
+      <h2>Filter Cars</h2>
+
+      <form id="filterForm">
+        <div class="filter-row">
+          <div>
+            <label for="minYear">Min Year</label>
+            <input type="number" id="minYear" placeholder="2005">
+          </div>
+
+          <div>
+            <label for="maxYear">Max Year</label>
+            <input type="number" id="maxYear" placeholder="2020">
+          </div>
+
+          <div>
+            <label for="maxMileage">Max Mileage</label>
+            <input type="number" id="maxMileage" placeholder="30000">
+          </div>
+
+          <div>
+            <label for="minPrice">Min Price</label>
+            <input type="number" id="minPrice" placeholder="5000">
+          </div>
+
+          <div>
+            <label for="maxPrice">Max Price</label>
+            <input type="number" id="maxPrice" placeholder="25000">
+          </div>
+        </div>
+
+        <div class="filter-box">
+          <h3>Make</h3>
+          <div id="makeOptions"></div>
+        </div>
+
+        <div class="filter-box">
+          <h3>Color</h3>
+          <div id="colorOptions"></div>
+        </div>
+
+        <div class="buttons">
+          <button type="submit">Apply Filters</button>
+          <button type="button" id="resetBtn">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="results">
+      <h2>Available Cars</h2>
+      <p id="message"></p>
+      <div id="carList" class="car-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>CSI 3150 - Programming Assignment 1</p>
+  </footer>
+
+</body>
+</html>
